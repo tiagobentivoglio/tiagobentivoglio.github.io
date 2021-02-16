@@ -118,7 +118,7 @@ function classificarTonica() {
         for (i=0; i < antepenultima.length; i++) {
             if (acentuadas.indexOf(antepenultima.charAt(i)) >= 0) {
                 let restante = silabas.slice(0, -3);
-                let resultado = `.${restante.join('.').concat('.')}<mark>${antepenultima}</mark>.${penultima}.${ultima}.`;
+                let resultado = `${restante.join('.').concat('.')}<mark>${antepenultima}</mark>.${penultima}.${ultima}.`;
                 return document.getElementById("saida").innerHTML = resultado;
             }
         };
