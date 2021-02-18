@@ -2,7 +2,7 @@ const padrao_silabas = new RegExp('(?:ch|nh|lh|gu|qu|ss|ps|^cu(?=i(?!m))|^mu(?=i
 
 const acentuadas = ['ã','á', 'â', 'é', 'ê', 'ó', 'ô', 'õ', 'í', 'ú'];
 
-const finais_along = ['l', 'r', 'x', 'i', 'u'];
+const finais_along = ['l', 'r', 'x', 'z', 'i', 'u'];
 
 const vogais = ['a', 'o', 'e'];
 
