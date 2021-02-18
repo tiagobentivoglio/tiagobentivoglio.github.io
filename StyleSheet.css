@@ -48,6 +48,7 @@ mark {
     font-size: 4vw;
     background-color: rgb(9, 7, 32);
     font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
     color: rgb(195, 204, 218);
     min-width: fit-content;
 }
