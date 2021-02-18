@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-
 <html>
     <head>
-        <title>find the emphasized syllable of words in Portuguese</title>
-        <link rel="stylesheet" href="StyleSheet.css">
-        <script src="codigo.js" charset="utf-8" type="text/javascript"></script>
+        <title>Help with Portuguese</title>
         <meta charset="UTF-8">
-        <meta name="keywords" content="chatbot, bot, robô">
-        <meta name="description" content="Ferramenta para alunos de português">
-        <meta name="author" content="Tiago Bentivoglio">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="codigo.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="StyleSheet.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-
     <body>
-        <div class="arearobo">
-            <span class="titulo">find the emphasized syllable of Portuguese words</span>
-            <textarea class="texto" id="entrada" spellcheck="false" placeholder="type the word here"></textarea>
-            <div class="cont_botoes">
-                <button class="botao" onclick="classificarTonica()" id="analisar">find emphasized syllable</button>    
-                <button class="botao" onclick="separarSilabas()" id="analisar">split syllables</button>
-                <button class="botao" onclick="limpar()" id="analisar">clean</button>
-                <button class="botao" onclick="" id="analisar">encontrou um erro? conta pra mim</button>
-            </div>
+        <div class="cont">
+            <textarea class="texto" id="entrada" spellcheck="false" placeholder="type here" autofocus></textarea>
+            <button id="botao" onclick="classificarTonica()">analyse</button>
             <div class="texto" id="saida" spellcheck="false"> </div>
         </div>
-
-    
     </body>
+
 </html>
