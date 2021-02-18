@@ -42,8 +42,8 @@ mark {
 }
 
 #botao {
-    width: 30%;
-    height: 18%;
+    width: fit-content;
+    height: fit-content;
     border: none;
     font-size: 4vw;
     background-color: rgb(9, 7, 32);
