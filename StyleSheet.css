@@ -35,7 +35,7 @@ mark {
     width: fit-content;
     resize: none;
     height: min-content;
-    font-size: xx-large;
+    font-size: 6vw;
     outline: none;
     overflow: auto;
     margin-top: 3%;
@@ -56,6 +56,6 @@ mark {
     min-height: min-content;
     text-align: center;
     justify-content: center;
-    font-size: 4vw;
+    font-size: 6vw;
     margin-top: 7%;
 }
