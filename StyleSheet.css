@@ -13,8 +13,6 @@ body {
     align-items: center;
     justify-content: flex-start;
     text-align: center;
-}:focus{
-    border-color: brown;
 }
 
 .texto {
@@ -37,7 +35,7 @@ mark {
     width: fit-content;
     resize: none;
     height: min-content;
-    font-size: 4vw;
+    font-size: xx-large;
     outline: none;
     overflow: auto;
     margin-top: 3%;
@@ -47,9 +45,10 @@ mark {
     width: 30%;
     height: 18%;
     border: none;
-    font-size: 60px;
+    font-size: 4vw;
     background-color: rgb(9, 7, 32);
     color: rgb(195, 204, 218);
+    min-width: fit-content;
 }
 
 #saida {
