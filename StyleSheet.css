@@ -1,119 +1,61 @@
-html {
+body {
     margin: 0px;
     height: 100%;
     width: 100%;
-    
 }
 
-body {
-    margin: 0;
-    min-height: 100%;
+.cont {
+    display: flex;
     width: 100%;
-    display: flex;
-    background-color:rgb(217, 217, 217);
-    justify-content: center;
-    align-items: center;
-}
-
-.arearobo {
-    background-color:rgb(253, 255, 252);
-    height: 500px;
-    width: 700px;
-    box-shadow: 5px 5px rgb(1, 22, 39);
-    border-radius: 5px;
-    display: flex;
+    height: 100%;
     flex-direction: column;
+    background-color: rgb(195, 204, 218);
     align-items: center;
-    justify-content: top;
-}
-
-#area_mensagem {
-    vertical-align: middle;
-    justify-content: center;
-}
-
-.titulo {
-    display:inline;
-    font-size: xx-large;
-    font-family: monospace;
-    font-weight: bolder;
-    
+    justify-content: flex-start;
+    text-align: center;
+}:focus{
+    border-color: brown;
 }
 
 .texto {
-    position: relative;
-    width: 90%;
-    height: 150px;
-    background-color: rgb(53, 53, 53);
-    border-radius: 5px;
-    margin: 10px;
-    border: 0px;
-    outline: none;
-    resize: none;
     font-size: 50px;
-    font-weight: bold;
-    caret-color: rgb(253, 255, 252);
-    color:  rgb(253, 255, 252);
     font-family: 'Courier New', Courier, monospace;
-}::placeholder {
-    color: rgb(253, 255, 252);
+    font-weight: bolder;
+    background-color: rgb(195, 204, 218);
+    border: none;
+    text-align-last: center;
+}
+
+mark {
+    background-color: rgb(9, 7, 32);
+    color: rgb(195, 204, 218);
+    padding: 0.8%;
+    border-radius: 3px;
 }
 
 #entrada {
-    position: static;
+    width: fit-content;
+    resize: none;
+    height: min-content;
+    font-size: 4vw;
+    outline: none;
+    overflow: auto;
 }
 
-
-mark {
-    background-color:rgb(255, 159, 28);
-    color:  rgb(1, 22, 39);
+#botao {
+    width: 30%;
+    height: 18%;
+    border: none;
+    font-size: 60px;
+    background-color: rgb(9, 7, 32);
+    color: rgb(195, 204, 218);
 }
 
-.cont_botoes {
-    display: flex;
-    flex-direction: row;
-    font-size: x-large;
-    width: 90%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.botao {
-    background-color: rgb(255, 159, 28);
-    border-radius: 5px;
-    height: 100px;
-    width: 23%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
-    font-size: 20px;
-    color: rgb(1, 22, 39);
-}
-
-.cont_form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-
-}
-
-.input {
-    width: 90%;
-    border: 2px solid;
-    border-radius: 4px;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    background-color: rgb(53, 53, 53);
-    color:  rgb(253, 255, 252);
-    font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.label {
-    display: flex;
-    
-    font-size: larger;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
+#saida {
+    width: 80%;
+    min-height: min-content;
+    text-align: center;
+    justify-content: center;
+    font-size: 4vw;
+    margin-top: 10%;
 }
