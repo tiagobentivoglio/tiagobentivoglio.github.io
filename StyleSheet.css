@@ -16,12 +16,13 @@ body {
 }
 
 .texto {
-    font-size: 50px;
+    font-size: 70px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bolder;
     background-color: rgb(195, 204, 218);
     border: none;
     text-align-last: center;
+    color: rgb(9, 7,32);
 }
 
 mark {
