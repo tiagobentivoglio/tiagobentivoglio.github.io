@@ -1,12 +1,20 @@
-const padrao_silabas = new RegExp('(?:ch|nh|lh|gu|qu|ss|ps|^cu(?=i(?!m))|^mu(?=i)|[mnzskjhx]|[fpbvtdcçrg][lr]?|[lr])?(?:[ieaoíéêáâãóõô][iu](?![iu])[iu]?|[u(i)?]|[áãâ][eo]|[õó][e]|[ieaouíéêáâãóõôúü])(?:(?:(?:(?:n(?!h)|d(?![rl])|m|t(?![lr])|z|x|p(?![slr])|b(?![rl])|g[?!rl])s?(?![ieaouíéêáâãóõôúü]))|(?:(?:i$)(?![ieaouíéêáãâóõôúüs]))|(?:(?:s)(?![ieaouíéêáãâóõôúüs]))|(?:(?:l)(?![hieaouíéêáãâóõôúü]))|(?:(?:r)(?![rieaouíéêáâãóõôúü]))|(?:(?:f)(?![rieaouíéêáâãóõôúü]))))?', 'g');
+const padrao_silabas = new RegExp('(?:ch|nh|lh|gu|qu|ss|ps|^cu(?=i(?!m))|^mu(?=i)|[mnzskjhx]|[fpbvtdcçrg][lr]?|[lr])?(?:[ieaoíéêáâãóõô][iu](?![iuz])[iu]?|[u(i)]|[áãâ][eo]|[õó][e]|[ieaouíéêáâãóõôúü])(?:(?:(?:(?:n(?!h)|d(?![rl])|m|t(?![lr])|z|x|p(?![slr])|b(?![rl])|g[?!rl])s?(?![ieaouíéêáâãóõôúü]))|(?:(?:i$)(?![ieaouíéêáãâóõôúüs]))|(?:(?:s)(?![ieaouíéêáãâóõôúüs]))|(?:(?:l)(?![hieaouíéêáãâóõôúü]))|(?:(?:r)(?![rieaouíéêáâãóõôúü]))|(?:(?:f)(?![rieaouíéêáâãóõôúü]))))?', 'g');
 
 const acentuadas = ['ã','á', 'â', 'é', 'ê', 'ó', 'ô', 'õ', 'í', 'ú'];
 
-const finais_along = ['l', 'r', 'x', 'z', 'i', 'u'];
+const finais_along = ['l', 'r', 'x', 'z', 'm',  'i', 'u'];
 
 const vogais = ['a', 'o', 'e'];
 
 const mono_atonas = ['o', 'a', 'os', 'as', 'um', 'uns', 'me', 'te', 'se', 'lhe', 'nos', 'vos', 'lhes', 'que', 'com', 'de', 'em ', 'por', 'sem', 'sob', 'à', 'ao', 'da', 'do', 'na', 'no', 'num', 'nuns', 'e', 'mas', 'nem', 'ou', 'dom', 'frei', 'seus'];
+
+function inputKeyUp(e) {
+    e.which = e.which || e.keyCode;
+    if(e.key == "Enter") {
+        classificarTonica();
+    }
+}
+
 
 function separarSilabas() {
     var texto = document.getElementById("entrada").value;
