@@ -72,9 +72,10 @@ function classificarTonica() {
 
         // se termina com s e não é precedido por o, a, e;
 
-        } else if (ultima.slice(ultima.charAt(-1)) == "s" && vogais.indexOf(ultima.slice(ultima.charAt(-2), ultima.charAt(-1))) == -1) {
-            let resultado = `.${silabas[0]}.<mark>${silabas[1]}</mark>.`;
-            document.getElementById("saida").innerHTML = resultado;
+        } else if (ultima.slice(-1) == "s" && vogais.indexOf(ultima.slice(-2, -1)) == -1) {
+            
+                let resultado = `.${silabas[0]}.<mark>${silabas[1]}</mark>.`;
+                document.getElementById("saida").innerHTML = resultado;
 
         // todos os outros casos são paroxítonas não acentuadas;
 
