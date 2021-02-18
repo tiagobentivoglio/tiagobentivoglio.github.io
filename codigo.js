@@ -11,6 +11,7 @@ const mono_atonas = ['o', 'a', 'os', 'as', 'um', 'uns', 'me', 'te', 'se', 'lhe',
 function inputKeyUp(e) {
     e.which = e.which || e.keyCode;
     if(e.key == "Enter") {
+        e.preventDefault();
         classificarTonica();
     }
 }
