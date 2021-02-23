@@ -1,4 +1,4 @@
-const padrao_silabas = new RegExp('(?:ch|nh|lh|gu|qu|ss|ps|^cu(?=i(?!m))|^mu(?=i)|[mnzskjhx]|[fpbvtdcçrg][lr]?|[lr])?(?:[ieaoíéêáâãóõô][iu](?![iuz])[iu]?|[u(i)]|[áãâ][eo]|[õó][e]|[ieaouíéêáâãóõôúü])(?:(?:(?:(?:n(?!h)|d(?![rl])|m|t(?![lr])|z|x|p(?![slr])|b(?![rl])|g[?!rl])s?(?![ieaouíéêáâãóõôúü]))|(?:(?:i$)(?![ieaouíéêáãâóõôúüs]))|(?:(?:s)(?![ieaouíéêáãâóõôúüs]))|(?:(?:l)(?![hieaouíéêáãâóõôúü]))|(?:(?:r)(?![rieaouíéêáâãóõôúü]))|(?:(?:f)(?![rieaouíéêáâãóõôúü]))))?', 'g');
+const padrao_silabas = new RegExp('(?:ch|nh|lh|gu|qu|ss|ps|^cu(?=i(?!m))|^mu(?=i)|[mnzskjhx]|[fpbvtdcçrg][lr]?|[lr])?(?:[ieaoíéêáâãóõô][iu](?![iuz])[iu]?|[u(i)]|[áãâ][eo]|[õó][e]|[ieaouíéêáâãóõôúü])(?:(?:(?:(?:n(?!h)|d(?![rl])|m|c(?![rl])|t(?![lr])|z|x|p(?![slr])|b(?![rl])|g[?!rl])s?(?![ieaouíéêáâãóõôúü]))|(?:(?:i$)(?![ieaouíéêáãâóõôúüs]))|(?:(?:s)(?![ieaouíéêáãâóõôúüs]))|(?:(?:l)(?![hieaouíéêáãâóõôúü]))|(?:(?:r)(?![rieaouíéêáâãóõôúü]))|(?:(?:f)(?![rieaouíéêáâãóõôúü]))))?', 'g');
 
 const acentuadas = ['ã','á', 'â', 'é', 'ê', 'ó', 'ô', 'õ', 'í', 'ú'];
 
