@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>jogos e aplicações linguísticas</title>
+        <link rel="icon" type="image/png" href="icone_girafa.png">
+        <link rel="stylesheet" href="StyleSheet_construcao.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="curso, aprendizado, javascript">
+        <meta name="description" content="Página de teste para aprendizado de JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="lateral">
+            <ul>
+                <li class="itemmenu"><a href="principal.html">início</a></li>
+                <li class="itemmenu"><a href="sobre.html">sobre</a></li>
+                <li class="itemmenu" id="nome_parte">jogos</li>
+                <li class="itemmenu"><a href="jogosilabas.html">desafio das sílabas</a></li>
+                <li class="itemmenu"><a href="jogo_verbos.html">desafio dos verbos</a></li>
+                <li class="itemmenu"><a href="advinho.html">adivinho a palavra</a></li>
+                <li class="itemmenu"><a href="jogo_construcao.html">construa palavras</a></li>
+                <li class="itemmenu" id="nome_parte">ferramentas linguísticas</li>
+                <li class="itemmenu"><a href="silabador.html">silabador</a></li>
+                <li class="itemmenu"><a href="plurais.html">pluralizador</a></li>
+                <li class="itemmenu"><a href="conjugador.html">conjugador</a></li>
+                <li class="itemmenu"><a href="rimador.html">rimador</a></li>
+                <li class="itemmenu"><a href="consulta_base.html">base de palavras</a></li>
+                <li class="itemmenu"><a href="consulta_sinonimos.html">ideias relacionadas</a></li>
+                
+            </ul>
+        </div>
+        <div class="corpo_jogo">
+
+            <table id="tabela_central" >
+            <tr >
+                <td style="width: 70%;  "><p id="titulo">Traga as sílabas para cima para construir palavras. Após construir, clique em "checar". Para inserir nova palavra, clique em limpar construtor.</p></td><td style="width: 30%;" style="border: 1px solid;"><button id="recomecar" onclick="reiniciar(), limpar()">novas sílabas</button></td>
+            </tr>
+            <tr>
+                <td colspan="2" >
+                    <div id="tabela_central_construcao">
+                        <div id="destino" ondragover="onDragOver(event);" ondrop="onDrop(event);">
+                            <div class="mover_square_fake" style="border: 1px solid rgb(195, 204, 218)">&nbsp;</div>
+                        </div>
+                        <div id="origem">
+                            
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_1">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_2">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_3">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_4">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_5">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_6">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_7">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_8">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_9">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_10">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_11">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_12">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_13">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_14">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_15">&nbsp;&nbsp;</div>
+                            <div class="mover_square" draggable="true" ondragstart="onDragStart(event);" onclick="onClick(this)" id="square_16">&nbsp;&nbsp;</div>
+                            
+                        </div>
+                    </div>
+                </td>
+            </tr>
+
+            </table>
+            <table id="controles_construcao">
+
+
+                <tr>
+                    <td style="text-align: center; width: 50%;" colspan="2"><button id="checar" onclick="checar()">checar</button><button id="limpar" onclick="limpar()">limpar construtor</button></td>
+                </tr>
+                <tr >
+                    <td id="possibilidades" >Palavras possíveis:&nbsp;&nbsp;&nbsp;</td>
+                    <td style="text-align: center;"><p id="acertos">Palavras encontradas: <mark>0</mark></p></td>
+                </tr>   
+                <tr>
+                    <td id="status" colspan="2" style="border-top: 1px solid">&nbsp;</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+
+    </body>
+    <script src="script_construcao.js"></script>
+    <script src="base_palavras_principal.js"></script>
+
+</html>

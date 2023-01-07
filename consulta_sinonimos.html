@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>jogos e aplicações linguísticas</title>
+        <link rel="icon" type="image/png" href="icone_girafa.png">
+        <link rel="stylesheet" href="StyleSheet_sinonimos.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="curso, aprendizado, javascript">
+        <meta name="description" content="Página de teste para aprendizado de JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="lateral">
+            <ul>
+                <li class="itemmenu"><a href="principal.html">início</a></li>
+                <li class="itemmenu"><a href="sobre.html">sobre</a></li>
+                <li class="itemmenu" id="nome_parte">jogos</li>
+                <li class="itemmenu"><a href="jogosilabas.html">desafio das sílabas</a></li>
+                <li class="itemmenu"><a href="jogo_verbos.html">desafio dos verbos</a></li>
+                <li class="itemmenu"><a href="advinho.html">adivinho a palavra</a></li>
+                <li class="itemmenu"><a href="jogo_construcao.html">construa palavras</a></li>
+                <li class="itemmenu" id="nome_parte">ferramentas linguísticas</li>
+                <li class="itemmenu"><a href="silabador.html">silabador</a></li>
+                <li class="itemmenu"><a href="plurais.html">pluralizador</a></li>
+                <li class="itemmenu"><a href="conjugador.html">conjugador</a></li>
+                <li class="itemmenu"><a href="rimador.html">rimador</a></li>
+                <li class="itemmenu"><a href="consulta_base.html">base de palavras</a></li>
+                <li class="itemmenu"><a href="consulta_sinonimos.html">ideias relacionadas</a></li>
+                
+            </ul>
+        </div>
+        <div class="corpo_consulta">
+            
+            <table id="tabelacentral">
+                <tr>
+                    <td><p class="titulo">Consulte nossa base de ideias relacionadas</p></td>
+                </tr>
+                <tr>
+                    <td class="titulo">Tamanho atual: <span id="tamanho">(...)</span> palavras</td>
+                </tr>
+                <tr>
+                    <td><input class="texto" id="entrada" spellcheck="false" autocomplete="off" placeholder="escreva aqui" rows="1" autofocus></input></td>
+                </tr>
+                <tr>
+                    <td><button  id="botao" onclick="consultar_sinonimo()">consultar</button></td>
+                </tr>
+            </table>
+            <table id="tabela_sinonimos">
+                <tr>
+                    <td class="saida_base" id="resultados_principais">&nbsp;</td>
+                    
+                </tr>
+                <tr>
+                    <td class="saida_base" id="resultados_secundarios">&nbsp;</td>
+                </tr>
+            </table>
+           
+        </div>
+    </body>
+    <script src="base_sinonimos.js"></script>
+    <script src="script_sinonimos.js"></script>
+</html>

@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>jogos e aplicações linguísticas</title>
+        <link rel="icon" type="image/png" href="icone_girafa.png">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="curso, aprendizado, javascript">
+        <meta name="description" content="Página de teste para aprendizado de JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+    </head>
+    
+    <body>
+        <div class="lateral">
+            <ul>
+                <li class="itemmenu"><a href="principal.html">início</a></li>
+                <li class="itemmenu"><a href="sobre.html">sobre</a></li>
+                <li class="itemmenu" id="nome_parte">jogos</li>
+                <li class="itemmenu"><a href="jogosilabas.html">desafio das sílabas</a></li>
+                <li class="itemmenu"><a href="jogo_verbos.html">desafio dos verbos</a></li>
+                <li class="itemmenu"><a href="advinho.html">adivinho a palavra</a></li>
+                <li class="itemmenu"><a href="jogo_construcao.html">construa palavras</a></li>
+                <li class="itemmenu" id="nome_parte">ferramentas linguísticas</li>
+                <li class="itemmenu"><a href="silabador.html">silabador</a></li>
+                <li class="itemmenu"><a href="plurais.html">pluralizador</a></li>
+                <li class="itemmenu"><a href="conjugador.html">conjugador</a></li>
+                <li class="itemmenu"><a href="rimador.html">rimador</a></li>
+                <li class="itemmenu"><a href="consulta_base.html">base de palavras</a></li>
+                <li class="itemmenu"><a href="consulta_sinonimos.html">ideias relacionadas</a></li>
+                
+            </ul>
+        </div>
+        <div id="corpo_plurais">
+            <table id="tabelacentral_plurais">
+                <tr >
+                    <td> <p id="titulo_silabador" >Encontre o plural de qualquer substantivo ou adjetivo da língua portuguesa!</p></td>
+                </tr>
+                <tr>
+                    <td><input class="texto" id="entrada" spellcheck="false" autocomplete="off" placeholder="escreva aqui" rows="1" autofocus></input></td>
+                </tr>
+                <tr>
+                    <td><button  id="botao" onclick="imprimir()">pluralizar</button></td>
+                </tr>
+                <tr>
+                    <td><output class="texto" id="saida_plural" spellcheck="false">&nbsp;</output></td>
+                </tr>
+            </table>
+            
+
+        </div>
+
+    </body>
+    <script src="base_palavras_principal.js"></script>
+    <script src="script_plurais.js"></script>
+
+</html>

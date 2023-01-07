@@ -1,0 +1,299 @@
+/* principal */
+body {
+    margin: 0;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* menu lateral */
+.lateral {
+    display: table-cell;
+    width: 10%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(209, 209, 209);
+}
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.itemmenu a{
+    display: block;
+    padding: 8px 16px;
+    color: black;
+    text-decoration: none;
+}
+
+.itemmenu a:hover {
+    background-color: rgb(184, 111, 82);
+    color: black;
+}
+
+#nome_parte {
+    display: block;
+    padding: 8px 16px;
+    background-color: black;
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+}
+
+
+
+
+/* página principal */
+
+.corpo {
+    display: table-cell;
+    width: 90%;
+    height: 100%;
+    flex-direction: column;
+    background-color: rgb(195, 204, 218);
+}
+
+#corpo_advinho {
+    display:table-cell;
+    width: 90%;
+    height: 100%;
+    background-color: rgb(195, 204, 218);
+    vertical-align: middle;
+    table-layout: fixed;
+}
+
+#tabela_numero_letras {
+    display: table;
+    table-layout:inherit;
+    align-self: auto;
+    width:25%;
+    height: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titulo_advinho {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+    height: fit-content;
+    color: rgb(9, 7,32);
+    
+    
+}
+
+.numero_letras {
+    background-color: rgb(9, 7, 32);
+    color: rgb(195, 204, 218);
+    width: 100%;
+    height: 100%;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.numero_letras:hover {
+    background-color: rgb(184, 111, 82);
+    color: rgb(9, 7,32);
+}
+
+#tabela_blanks {
+    height: 10%;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    table-layout: fixed;
+    
+}
+
+#row_blanks_letras {
+    border: none;
+}
+
+.blanks {
+    background-color: rgb(195, 204, 218);
+    border-bottom: 2px solid;
+    width: 100%;
+    height: 100%;
+    color: rgb(9, 7,32);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+
+#tabela_sugestoes {
+    height: 15%;
+    width:40%;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    table-layout: fixed;
+    
+    
+    align-items: center;
+    text-align: center;
+}
+
+#tabela_guess {
+    height: 13%;
+    width:65%;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: 1px solid;
+    table-layout: fixed;
+    
+    
+}
+
+#letra_sugestao {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: x-large;
+    color: rgb(9, 7,32);
+    width: 70%;
+    text-align: center;
+}
+
+#instrucao_preenchimento {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(9, 7,32);
+    text-align: center;
+}
+
+
+#nao {
+    background-color: rgb(184, 111, 82);
+    border-color: rgb(9, 7,32);
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(9, 7,32);
+    font-size: medium;
+    width: 70%;
+    height: 100%;
+}
+
+.guess_fixo {
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#controles {
+    border-bottom: 1px solid;
+}
+
+#numero_letras_tentadas {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#numero_chutes {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+#status {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: large;
+    border-top: 1px solid;
+}
+
+#tabela_reboot {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 35%;
+    margin-top: 1%;
+    height: 7%;
+}
+
+#reboot {
+    width: 100%;
+}
+
+#reboot_button {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(102, 128, 88);
+    border-color: rgb(9, 7,32);
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(9, 7,32);
+    font-size: x-large;
+}
+
+#retry_button {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(232, 95, 92);
+    border-color: rgb(9, 7,32);
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(9, 7,32);
+    font-size: large;
+}
+
+#correto {
+    height: 100%;
+    width: 50%;
+    background-color: rgb(57, 100, 106);
+    border-color: rgb(9, 7,32);
+    border-style: solid;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(9, 7,32);
+    font-size: large;
+}
+
+mark {
+    background-color: rgb(9, 7, 32);;
+    color: rgb(195, 204, 218);
+}
+
+#tabela_opcoes_vogais {
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    height: 8%;
+    margin-bottom: 3%
+    
+}
+
+#row_opcoes_vogais {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.opcoes_vogais {
+    background-color: rgb(195, 204, 218);
+    border: 2px solid;
+    width: 100%;
+    height: 100%;
+    color: rgb(9, 7,32);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: xx-large;
+
+}
+

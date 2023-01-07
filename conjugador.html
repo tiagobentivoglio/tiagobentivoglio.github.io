@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>jogos e aplicações linguísticas</title>
+        <link rel="icon" type="image/png" href="icone_girafa.png">
+        <link rel="stylesheet" href="StyleSheet_conjugador.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="curso, aprendizado, javascript">
+        <meta name="description" content="Página de teste para aprendizado de JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    
+    <body>
+        <div class="lateral">
+            <ul>
+                <li class="itemmenu"><a href="principal.html">início</a></li>
+                <li class="itemmenu"><a href="sobre.html">sobre</a></li>
+                <li class="itemmenu" id="nome_parte">jogos</li>
+                <li class="itemmenu"><a href="jogosilabas.html">desafio das sílabas</a></li>
+                <li class="itemmenu"><a href="jogo_verbos.html">desafio dos verbos</a></li>
+                <li class="itemmenu"><a href="advinho.html">adivinho a palavra</a></li>
+                <li class="itemmenu"><a href="jogo_construcao.html">construa palavras</a></li>
+                <li class="itemmenu" id="nome_parte">ferramentas linguísticas</li>
+                <li class="itemmenu"><a href="silabador.html">silabador</a></li>
+                <li class="itemmenu"><a href="plurais.html">pluralizador</a></li>
+                <li class="itemmenu"><a href="conjugador.html">conjugador</a></li>
+                <li class="itemmenu"><a href="rimador.html">rimador</a></li>
+                <li class="itemmenu"><a href="consulta_base.html">base de palavras</a></li>
+                <li class="itemmenu"><a href="consulta_sinonimos.html">ideias relacionadas</a></li>
+                
+            </ul>
+        </div>
+        <div id="corpo_conjugador">
+
+            <p id="titulo_conjugador">Escreva um verbo aqui:</p>
+            <table id="tabela_input_conjugador">
+                <tr>
+                    <td><input id="input_conjugador" spellcheck="false" autocomplete="off" placeholder="ex: falar" rows="1" autofocus></td>
+                </tr>
+
+            </table>
+
+            <table id="tabela_controles">
+                <tr>
+                    <th style="border: 1px solid; font-weight: bolder;">indicativo</th>
+                    <th style="border: 1px solid">subjuntivo</th>
+                    <th style="border: 1px solid">imperativo</th>
+                </tr>
+                <tr>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="presente_ind(1)">presente</button></td>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="presente_sub(1)">presente</button></td>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="presente_imperat_positivo(1)" style="width: 50%">positivo</button><button class="botao_temposverbais" onclick="presente_imperat_negativo(1)" style="width: 50%">negativo</button></td>
+                </tr>
+                <tr>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="pret_imperfeito_ind(1)">passado imperfeito</button></td>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="pret_imperfeito_sub(1)">passado imperfeito</button></td>
+                    <td class="row_conjugador"></td>
+                </tr>
+                <tr>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="pret_perfeito_ind(1)">passado perfeito</button></td>
+                    <td class="row_conjugador"></td>
+                    <td class="row_conjugador"></td>
+                </tr>
+                <tr>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="pret_maisque_ind(1)">passado mais-que-perfeito</button></td>
+                    <td class="row_conjugador"></td>
+                    <td class="row_conjugador"></td>
+                </tr>
+                <tr>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="futuro_pres_ind(1)">futuro do presente</button></td>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="futuro_sub(1)">futuro</button></td>
+                    <td class="row_conjugador"></td>
+                </tr>
+                <tr>
+                    <td class="row_conjugador"><button class="botao_temposverbais" onclick="futuro_pret_ind(1)">futuro do passado</button></td>
+                    <td class="row_conjugador"></td>
+                    <td class="row_conjugador"></td>
+                </tr>
+
+            </table>
+            
+            <table id="tabela_conjugador">
+                
+                
+                <tr>
+                    <td class="pessoa" title="eu"><mark>eu</mark>&nbsp;</td>
+                    <td class="conjugacao" colspan="4" id="eu"></td>
+                </tr>
+                <tr>
+                    <td class="pessoa" title="tu"><mark>tu</mark>&nbsp;</td>
+                    <td class="conjugacao" colspan="4" id="tu"></td>
+                </tr>
+                <tr>
+                    <td class="pessoa" title="ele"><mark>ele</mark>&nbsp;</td>
+                    <td class="conjugacao" colspan="4" id="ele"></td>
+                </tr>
+                <tr>
+                    <td class="pessoa" title="nós"><mark>nós</mark>&nbsp;</td>
+                    <td class="conjugacao" colspan="4" id="nos"></td>
+                </tr>
+                <tr>
+                    <td class="pessoa" title="vós"><mark>vós</mark>&nbsp;</td>
+                    <td class="conjugacao" colspan="4" id="vos"></td>
+                </tr>
+                <tr>
+                    <td class="pessoa" title="eles"><mark>eles</mark>&nbsp;</td>
+                    <td class="conjugacao" colspan="4" id="eles"></td>
+                </tr>
+
+            </table>
+            <table id="tabela_aviso">
+                <tr>
+                    <td><p id="aviso">&nbsp;</p></td>
+                </tr>
+            </table>
+
+        </div>
+
+    </body>
+    <script src="script_conjugador.js"></script>
+    <script src="verbos_regulares.js"></script>
+</html>

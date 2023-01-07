@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <title>jogos e aplicações linguísticas</title>
+        <link rel="icon" type="image/png" href="icone_girafa.png">
+        <link rel="stylesheet" href="StyleSheet.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="curso, aprendizado, javascript">
+        <meta name="description" content="Página de teste para aprendizado de JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    </head>
+    <body>
+        <div class="lateral">
+            <ul>
+                <li class="itemmenu"><a href="principal.html">início</a></li>
+                <li class="itemmenu"><a href="sobre.html">sobre</a></li>
+                <li class="itemmenu" id="nome_parte">jogos</li>
+                <li class="itemmenu"><a href="jogosilabas.html">desafio das sílabas</a></li>
+                <li class="itemmenu"><a href="jogo_verbos.html">desafio dos verbos</a></li>
+                <li class="itemmenu"><a href="advinho.html">adivinho a palavra</a></li>
+                <li class="itemmenu"><a href="jogo_construcao.html">construa palavras</a></li>
+                <li class="itemmenu" id="nome_parte">ferramentas linguísticas</li>
+                <li class="itemmenu"><a href="silabador.html">silabador</a></li>
+                <li class="itemmenu"><a href="plurais.html">pluralizador</a></li>
+                <li class="itemmenu"><a href="conjugador.html">conjugador</a></li>
+                <li class="itemmenu"><a href="rimador.html">rimador</a></li>
+                <li class="itemmenu"><a href="consulta_base.html">base de palavras</a></li>
+                <li class="itemmenu"><a href="consulta_sinonimos.html">ideias relacionadas</a></li>
+                
+            </ul>
+        </div>
+        <div class="corpo_consulta">
+            
+            <table id="tabelacentral" style="width: 40%">
+                <tr>
+                    <td><p class="titulo">Consulte nossa base</p></td>
+                </tr>
+                <tr>
+                    <td class="titulo">Tamanho atual: <span id="tamanho"></span> entradas</td>
+                </tr>
+                <tr>
+                    <td><input class="texto" id="entrada" spellcheck="false" autocomplete="off" placeholder="escreva aqui" rows="1" autofocus></input></td>
+                </tr>
+                <tr>
+                    <td><button  id="botao" onclick="consultar_palavra()">consultar</button></td>
+                </tr>
+            </table>
+            <table id="tabela_saida_consulta"  style="margin-bottom: 5%">
+                <tr>
+                    <td class="saida_base" id="classe">&nbsp;</td>
+                </tr>
+            </table>
+            <table id="opcoes_classes_aleatoria">
+                <tr>
+                    <td colspan='2' id="inst_classe_aleatoria" style="border: 1px solid;">Ou escolha uma palavra aleatória pela classe</td>
+                </tr>
+                <tr class="linha_classes">
+                    <td><button class="classe" id="subs">substantivo</button></td>
+                    <td><button class="classe" id="verb">verbo</button></td>
+                </tr>
+                <tr class="linha_classes">
+                    <td><button class="classe" id="adj">adjetivo</button></td>
+                    <td><button class="classe" id="adv">advérbio</button></td>
+                </tr>
+                <tr class="linha_classes">
+                    <td><button class="classe" id="pron">pronome</button></td>
+                    <td><button class="classe" id="prep">preposição</button></td>
+                </tr>
+                <tr class="linha_classes">
+                    <td><button class="classe" id="num">numeral</button></td>
+                    <td><button class="classe" id="conj">conjunção</button></td>
+                </tr>
+                <tr class="linha_classes">
+                    <td><button class="classe" id="art">artigo</button></td>
+                    <td><button class="classe" id="int">interjeição</button></td>
+                </tr>
+            </table>
+
+           
+        </div>
+    </body>
+    <script src="base_palavras_principal.js"></script>
+    <script src="script_consulta_base.js"></script>
+</html>

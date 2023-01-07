@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>jogos e aplicações linguísticas</title>
+        <link rel="icon" type="image/png" href="icone_girafa.png">
+        <link rel="stylesheet" href="StyleSheet_advinho.css">
+        <meta charset="UTF-8">
+        <meta name="keywords" content="curso, aprendizado, javascript">
+        <meta name="description" content="Página de teste para aprendizado de JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+    </head>
+    
+    <body>
+        <div class="lateral">
+            <ul>
+                <li class="itemmenu"><a href="principal.html">início</a></li>
+                <li class="itemmenu"><a href="sobre.html">sobre</a></li>
+                <li class="itemmenu" id="nome_parte">jogos</li>
+                <li class="itemmenu"><a href="jogosilabas.html">desafio das sílabas</a></li>
+                <li class="itemmenu"><a href="jogo_verbos.html">desafio dos verbos</a></li>
+                <li class="itemmenu"><a href="advinho.html">adivinho a palavra</a></li>
+                <li class="itemmenu"><a href="jogo_construcao.html">construa palavras</a></li>
+                <li class="itemmenu" id="nome_parte">ferramentas linguísticas</li>
+                <li class="itemmenu"><a href="silabador.html">silabador</a></li>
+                <li class="itemmenu"><a href="plurais.html">pluralizador</a></li>
+                <li class="itemmenu"><a href="conjugador.html">conjugador</a></li>
+                <li class="itemmenu"><a href="rimador.html">rimador</a></li>
+                <li class="itemmenu"><a href="consulta_base.html">base de palavras</a></li>
+                <li class="itemmenu"><a href="consulta_sinonimos.html">ideias relacionadas</a></li>
+                
+            </ul>
+        </div>
+        <div id="corpo_advinho">
+            <p class="titulo_advinho" style="padding-top: 2%;">Pense em uma palavra da língua portuguesa...</p>
+            <p class="titulo_advinho">Quantas letras tem essa palavra?</p>
+            <table id="tabela_numero_letras">
+                <tr>
+                    <td><button class="numero_letras" id="1">1</button></td>
+                    <td><button class="numero_letras" id="2">2</button></td>
+                    <td><button class="numero_letras" id="3">3</button></td>
+                    <td><button class="numero_letras" id="4">4</button></td>
+                    <td><button class="numero_letras" id="5">5</button></td>
+                    
+                </tr>
+                <tr>
+                    <td><button class="numero_letras" id="6">6</button></td>
+                    <td><button class="numero_letras" id="7">7</button></td>
+                    <td><button class="numero_letras" id="8">8</button></td>
+                    <td><button class="numero_letras" id="9">9</button></td>
+                    <td><button class="numero_letras" id="10">10</button></td>
+                </tr>
+                <tr>
+                    <td><button class="numero_letras" id="11">11</button></td>
+                    <td><button class="numero_letras" id="12">12</button></td>
+                    <td><button class="numero_letras" id=13>13</button></td>
+                    <td><button class="numero_letras" id="14">14</button></td>
+                    <td><button class="numero_letras" id="15">15</button></td>
+            </table>
+            <table id="tabela_sugestoes">
+                <tr>
+                    <td id="cell_nao"></td>
+                </tr>
+                <tr>
+                    <td id="letra_sugestao">&nbsp;</td>
+                </tr>
+
+                <tr>
+                    <td id="instrucao_preenchimento">&nbsp;</td>
+                </tr>
+            </table>
+                
+            <table id="tabela_blanks">
+                <tr id="row_blanks_letras">
+                </tr>
+            </table>
+            <table id="tabela_opcoes_vogais">
+                <tr id="row_opcoes_vogais">&nbsp;</tr>
+            </table>
+            <table id="tabela_guess">
+                <tr style="border-top: 1px solid">
+                    <td class="guess_fixo" id="numero_letras_tentadas" style="width: 33.3%">Letras sugeridas:&nbsp;&nbsp;</td>
+                    <td class="guess_fixo" id="numero_chutes" style="width: 33.3%">Chutes:</td>
+                    <td class="guess_fixo" id="numero_dicas_display" style="width: 33.3%">Dicas: </td>
+                </tr>
+                <tr>
+                    <td id="status" colspan="3">&nbsp;</td>
+                </tr>
+                
+            </table>
+            <table id="tabela_reboot">
+                <tr>
+                    <td id="reboot">&nbsp;</td>
+                </tr>
+            </table>
+            
+
+        </div>
+
+    </body>
+    
+    <script src="lista_palavras.js"></script>
+    <script src="script_advinho.js"></script>
+    <script src="base_sinonimos.js"></script>
+</html>
